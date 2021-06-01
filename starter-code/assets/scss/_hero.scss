@@ -1,0 +1,85 @@
+.hero {
+    &__image {
+        background-image: url('../tablet/image-hero.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 9.5625rem;
+
+        @include breakpoint-up(medium) {
+            min-height: 18.9375rem;
+        }
+    }
+
+    &__container {
+        display: flex;
+        min-height: 22.375rem; 
+
+        .desktopLeft {
+            background-image: url(../desktop/image-hero-left.png);
+            background-position: left -33px top;
+            background-repeat: no-repeat;
+            flex: 1;
+            
+        }
+
+        .desktopRight {
+            background-image: url(../desktop/image-hero-right.png);
+            background-position: right -33px bottom;
+            background-repeat: no-repeat;
+            flex: 1;
+            
+        }
+        
+    }
+
+    &__text {
+
+        text-align: center;
+        flex: 1;
+
+        @include breakpoint-up(medium) {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+
+        .title {
+            font-size: $font-med;
+            color: $veryDarkGrey;
+            padding-bottom: 1.75rem;
+            @include breakpoint-up(medium) {
+                font-size: 3rem;
+            }
+
+            @include breakpoint-up(large) {
+                width: 80%;
+                font-size: $font-lg;
+                margin: 0 auto;
+            }
+        }
+
+        .description {
+            font-size: $font-sm;
+            color: $grey;
+            line-height: 1.6;
+            padding-bottom: 2.625rem;
+        }
+
+        >a {
+            margin-right: 1.125rem;
+
+            &:not(:last-child) {
+                margin-bottom: 1.0625rem;
+            }
+        }
+    }
+
+    
+
+    
+
+
+
+
+}

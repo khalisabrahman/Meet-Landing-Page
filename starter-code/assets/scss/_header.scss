@@ -1,0 +1,20 @@
+.header {
+    text-align: center;
+    
+    &__logo {
+        margin-top: 49px;
+        margin-bottom: 54px;
+        
+
+        @include breakpoint-up(medium) {
+            margin-bottom: 64px;
+        }
+
+        @include breakpoint-up(large) {
+            margin-top: 80px;
+            margin-bottom: 61px;
+        }
+    }
+
+
+}
