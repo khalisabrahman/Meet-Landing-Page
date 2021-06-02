@@ -1,0 +1,32 @@
+.page__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .line {
+        position: absolute;
+        margin-top: 126px;
+        width: 85px;
+        height: 2px;
+        background-color: $grey;
+        transform: rotate(90deg);
+    }
+
+    .circle {
+        display: flex;
+        background-color: $white;
+        justify-content: center;
+        align-items: center;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        border: 2px solid $grey;
+        transform: translateY(133px);
+        z-index: 20;
+
+        .circleNum {
+            color: $grey;
+            font-size: 1rem;
+        }
+    }
+}

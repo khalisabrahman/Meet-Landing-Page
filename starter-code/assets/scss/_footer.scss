@@ -1,0 +1,80 @@
+.footer {
+    position: relative;
+    height: 26.25rem;
+    margin-top: 103px;
+    background: url(../mobile/image-footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include breakpoint-up(medium) {
+        background-image: url(../tablet/image-footer.jpg);
+    }
+
+    @include breakpoint-up(large) {
+        background-image: url(../desktop/image-footer.jpg);
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: linear-gradient($darkTeal, $darkTeal);
+        background-color: $darkTeal;
+        opacity: 0.85;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        
+    }
+
+    .text {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        z-index: 999;
+
+        @include breakpoint-up(large) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        
+    }
+
+    .text > * {
+        z-index: 999;
+    }
+
+    &__title {
+        padding-top: 1.6875rem;
+        font-size: 2rem;
+        padding-bottom: 1.75rem;
+        color: $white;
+        flex: 2;
+    
+    }
+
+    &__description {
+        color: $white;
+        font-size: 1.125rem;
+        padding-bottom: 2.5rem;
+        flex: 1;
+
+        @include breakpoint-up(large) {
+            text-align: left;
+        }
+    }
+
+    .buttonContainer {
+        flex: 1;
+    }
+    
+    .footerButton {
+        background-color: $darkPurple;
+        
+    }
+
+ }

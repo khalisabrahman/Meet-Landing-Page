@@ -1,0 +1,32 @@
+.gallery {
+    margin-top: 12.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.625rem;
+
+    
+    @include breakpoint-up(medium) {
+        gap: 0.625rem;
+    }
+
+    @include breakpoint-up(large) {
+        gap: 1.875rem;
+    }
+
+    img {
+        height: 9.125rem;
+        width: 9.125rem;
+        border-radius: 5px;
+
+        @include breakpoint-up(medium) {
+            height: 9.75rem;
+        width: 10.25rem;
+        }
+
+        @include breakpoint-up(large) {
+            width: 15.9375rem;
+        height: 15.125rem;
+        }
+    }
+}

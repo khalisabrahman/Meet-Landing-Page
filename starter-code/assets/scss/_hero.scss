@@ -68,6 +68,9 @@
 
         >a {
             margin-right: 1.125rem;
+            @include breakpoint-down(small) {
+                margin-right: 0px;
+            }
 
             &:not(:last-child) {
                 margin-bottom: 1.0625rem;

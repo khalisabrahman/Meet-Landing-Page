@@ -1,0 +1,41 @@
+.features {
+    text-align: center;
+
+    &__subheader {
+        font-size: 1rem;
+        color: $darkTeal;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        padding-bottom: 2.125rem;
+    }
+
+    &__title {
+        font-size: 2rem;
+        padding-bottom: 2.25rem;
+        @include breakpoint-up(medium) {
+            margin: 0 auto;
+            width: 46%;
+        }
+
+        @include breakpoint-up(large) {
+             width: 24%;
+        }
+    }
+
+    &__description {
+        font-size: 1rem;
+        padding-left: 8px;
+        padding-right: 8px;
+        color: $grey;
+
+        @include breakpoint-up(medium) {
+            padding-left: 5.0625rem;
+            padding-right: 5.0625rem;
+        }
+
+        @include breakpoint-up(large) {
+            padding-left: 20.25rem;
+            padding-right: 20.25rem;
+        }
+    }
+}
