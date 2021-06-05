@@ -335,7 +335,7 @@ h1, h2, p {
   position: relative;
   height: 26.25rem;
   margin-top: 103px;
-  background: url(../mobile/image-footer.jpg);
+  background-image: url(../mobile/image-footer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -366,15 +366,16 @@ h1, h2, p {
 }
 
 .footer .text {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
   text-align: center;
-  z-index: 999;
 }
 
 @media (min-width: 64em) {
   .footer .text {
-    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
